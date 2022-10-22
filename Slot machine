@@ -60,7 +60,7 @@ def maquina():
 
             aposta = int(input("Quanto queres apostar: "))
             if creditos < aposta:
-                print("Nao tens creditos suficientes")
+                print("Nao tens batatas suficientes")
                 continue
             creditos = creditos - aposta
 
@@ -89,12 +89,12 @@ def maquina():
                 if (a == 0):
                     creditos = creditos + 1000*aposta
 
-            print (f"Tens {creditos} creditos")
+            print (f"Tens {creditos} batatas")
 
 
 
         else:
             print("Não quiseste jogar mais. Saíste com {} batatas. Ate a proxima camarada!!".format(creditos))
             break
-    print("Ficaste batatas. Vais para o GULAG")
+    print("Ficaste sem batatas. Vais para o GULAG")
 maquina()
