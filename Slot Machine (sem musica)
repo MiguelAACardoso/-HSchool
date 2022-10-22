@@ -1,11 +1,8 @@
 from random import choices
-from pygame import mixer
 
 lista = ("#", 7, "$", "€", "?", 0, "<3")
 
-mixer.init()
-mixer.music.load('National Anthem of USSR.mp3')
-mixer.music.play()
+
 
 class Dice:
     sides = 6
@@ -96,5 +93,5 @@ def maquina():
         else:
             print("Não quiseste jogar mais. Saíste com {} batatas. Ate a proxima camarada!!".format(creditos))
             break
-    print("Ficaste sem batatas. Vais para o GULAG")
+    print("Vais para o GULAG")
 maquina()
